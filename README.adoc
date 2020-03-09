@@ -1,0 +1,32 @@
+= OAuth 2.0 Protocols and Patterns
+
+WARNING: The samples in this repo are intended for educational purposes to demonstrate certain features of Spring Security and OAuth 2.0 / OpenID Connect 1.0.
+ *DO NOT* blindly copy/paste code from the samples into production applications.
+Please work with your information security team to determine the suitability of using the patterns shown in the samples.
+
+== Run the Sample
+
+* Build the sample -> `./gradlew clean build`
+* Run UAA Server -> `./gradlew -b uaa-server/build.gradle uaa`
+* Run UI App -> `./gradlew -b ui-app/build.gradle bootRun`
+* Run Microservice A -> `./gradlew -b microservice-a/build.gradle bootRun`
+* Run Microservice B -> `./gradlew -b microservice-b/build.gradle bootRun`
+* Run Microservice C -> `./gradlew -b microservice-c/build.gradle bootRun`
+* Go to `http://localhost:8080` and login to UAA using *user1/password*
+
+== Resources
+
+=== Reference Documentation
+
+* https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2client[OAuth 2.0 Client]
+* https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login[OAuth 2.0 Login]
+* https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver[OAuth 2.0 Resource Server]
+
+=== Samples
+
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2login[OAuth 2.0 Login]
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2login-webflux[OAuth 2.0 Login (WebFlux)]
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2webclient[OAuth 2.0 WebClient extensions (Servlet)]
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2webclient-webflux[OAuth 2.0 WebClient extensions (WebFlux)]
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver[OAuth 2.0 Resource Server]
+* https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-webflux[OAuth 2.0 Resource Server (WebFlux)]
